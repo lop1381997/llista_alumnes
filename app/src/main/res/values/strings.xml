@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LlistaAlumnesV1</string>
+    <string name="llista_alumnes">LLista alumnes</string>
+    <string name="textview">TextView</string>
+</resources>
