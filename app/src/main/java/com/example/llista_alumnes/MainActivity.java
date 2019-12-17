@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         inicialitza();
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.adapter_list_view, R.id.adapter_name, nombres);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.activity_main, R.id.adapter_name, nombres);
         lv1.setAdapter(adapter);
 
         lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        ArrayAdapter<String> adapter_spinner = new ArrayAdapter<>(this, R.layout.adapter_list_view, R.id.spinner, spinner_array);
+        ArrayAdapter<String> adapter_spinner = new ArrayAdapter<>(this, R.layout.activity_main, R.id.spinner, spinner_array);
         spinner.setAdapter(adapter_spinner);
     }
 

@@ -3,7 +3,7 @@
     android:layout_height = "wrap_content"
     android:orientation = "vertical"
     android:layout_width="fill_parent">
-    <TableRow>
+    <!--<TableRow>
         <TextView android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             android:id="@+id/adapter_name"
@@ -12,6 +12,6 @@
         <Spinner android:id="@+id/spinner"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"/>
-    </TableRow>
+    </TableRow>-->
 
 </TableLayout>
