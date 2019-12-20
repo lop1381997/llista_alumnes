@@ -28,8 +28,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         inicialitza();
 
-        ArrayAdapter <String> adapter_spinner = new ArrayAdapter<>(this, R.layout.adapter_spinner, R.id.spinner, spinner_array);
-        spinner.setAdapter(adapter_spinner);
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.adapter_list_view, R.id.adapter_name, nombres);
         lv1.setAdapter(adapter);
 
@@ -46,9 +45,6 @@ public class MainActivity extends Activity {
 
     private void inicialitza() {
         tv1 = findViewById(R.id.tv1);
-//        spinner = findViewById(R.id.spinner);
         lv1 = findViewById(R.id.lv1);
-
-
     }
 }
