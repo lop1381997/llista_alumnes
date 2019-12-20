@@ -2,18 +2,31 @@
 <TableLayout xmlns:android = "http://schemas.android.com/apk/res/android"
     android:layout_height = "wrap_content"
     android:orientation = "vertical"
-    android:layout_width="fill_parent">
-    <!--<TableRow>
-        <TextView android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
+    android:layout_width="fill_parent"
+    android:id="@+id/taula">
+    <TableRow>
+        <TextView
             android:id="@+id/adapter_name"
-            />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
-        <Spinner android:id="@+id/spinner"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"/>
-    </TableRow>-->
 
-    <include android:id="@+id/ad"
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <Spinner android:id="@+id/spinner"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"/>
+
+    </TableRow>
+
+
+
+
+
+
 
 </TableLayout>
