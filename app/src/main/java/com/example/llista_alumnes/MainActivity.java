@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
         tv1 = findViewById(R.id.tv1);
 //        spinner = findViewById(R.id.spinner);
         lv1 = findViewById(R.id.lv1);
-
+        
 
     }
 }
