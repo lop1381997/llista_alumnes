@@ -2,6 +2,6 @@
 
 <TextView android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/spinner"
+    android:id="@+id/tv_spinner"
     xmlns:android="http://schemas.android.com/apk/res/android" />
 
