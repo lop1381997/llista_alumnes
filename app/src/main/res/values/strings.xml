@@ -5,4 +5,5 @@
     <string name="assistencia">assistencia</string>
     <string name="nom">Nom</string>
     <string name="afegir_alumne">afegir alumne</string>
+    <string name="calendar_ms">Elegeix aqui el dia que vols fer servir</string>
 </resources>
