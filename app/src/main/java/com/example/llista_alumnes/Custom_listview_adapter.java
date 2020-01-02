@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -21,9 +22,10 @@ public class Custom_listview_adapter extends ArrayAdapter {
     private String [] notas_array = new String [] {"0","1","2","3","4","5","6","7","8","9","10"};
     private int textResourceId;
     private int resource;
-    private String [] data;
+    private ArrayList<String> data;
 
-    public Custom_listview_adapter(Context context, int resource,  int textViewResourceId, String [] data){
+
+    public Custom_listview_adapter(Context context, int resource, int textViewResourceId, ArrayList data){
         super(context,resource,textViewResourceId,data);
         this.context = context;
         this.textResourceId = textViewResourceId;
@@ -34,12 +36,12 @@ public class Custom_listview_adapter extends ArrayAdapter {
 
     @Override
     public int getCount(){
-        return this.spinner_array.length;
+        return this.data.size();
     }
 
     @Override
     public Object getItem(int position){
-        return this.spinner_array[position];
+        return this.data.get(position);
     }
 
     @Override
@@ -61,13 +63,10 @@ public class Custom_listview_adapter extends ArrayAdapter {
         Spinner spinner = (Spinner) view.findViewById(R.id.spinner);
         Spinner notas = (Spinner) view.findViewById(R.id.notas);
 
-        textView.setText(data[position]);
+        textView.setText(data.get(position));
         Custom_spinner_adapter adapter_notas = new Custom_spinner_adapter(context, R.layout.adapter_spinner,R.id.notas, this.notas_array);
-       // ArrayAdapter<String> adapter_notas = new ArrayAdapter<>(context, android.R.layout.simple_spinner_item, this.notas_array);
         notas.setAdapter(adapter_notas);
         Custom_spinner_adapter adapter = new Custom_spinner_adapter(context, R.layout.adapter_spinner,R.id.spinner, this.spinner_array);
-
-        //  ArrayAdapter<String> adapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_item, this.spinner_array);
         spinner.setAdapter(adapter);
 
         return view;

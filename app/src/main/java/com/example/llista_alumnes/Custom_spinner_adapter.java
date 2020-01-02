@@ -19,7 +19,7 @@ import androidx.annotation.Nullable;
 // aqui pots interectuar amb spinner usant al funcio del getview
 
 public class Custom_spinner_adapter extends ArrayAdapter implements SpinnerAdapter {
-    Context context;
+    private  Context context;
     private int textResourceId;
     private int resource;
     private String [] data;
@@ -39,7 +39,7 @@ public class Custom_spinner_adapter extends ArrayAdapter implements SpinnerAdapt
 
     @Override
     public Object getItem(int position){
-        return this.data[];
+        return this.data[position];
     }
 
     @Override
