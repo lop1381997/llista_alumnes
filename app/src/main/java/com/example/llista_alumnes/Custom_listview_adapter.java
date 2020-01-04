@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class Custom_listview_adapter extends ArrayAdapter {
     Context context;
-    private String []  spinner_array = new String [] {"ha vingut","Ha faltat"};
+    private String []  spinner_array = new String [] {"Ha vingut","Ha faltat", "S'ha retrasat", "Falta justificada", "Retard justificat"};
     private String [] notas_array = new String [] {"0","1","2","3","4","5","6","7","8","9","10"};
     private int textResourceId;
     private int resource;

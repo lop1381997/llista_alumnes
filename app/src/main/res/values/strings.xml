@@ -2,8 +2,9 @@
     <string name="app_name">LlistaAlumnes</string>
     <string name="llista_alumnes">LLista alumnes</string>
     <string name="textview">TextView</string>
-    <string name="assistencia">assistencia</string>
+    <string name="assistencia">Assistencia</string>
     <string name="nom">Nom</string>
-    <string name="afegir_alumne">afegir alumne</string>
+    <string name="afegir_alumne">Afegir alumne</string>
     <string name="calendar_ms">Elegeix aqui el dia que vols fer servir</string>
+    <string name="afegir_estudiants">Afegir estudiants</string>
 </resources>
